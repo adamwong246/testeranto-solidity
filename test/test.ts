@@ -1,0 +1,103 @@
+import { ITestSpecification, OT } from "testeranto/src/Types";
+
+import { assert } from "chai";
+
+import { BaseImplementation, IReduxIn } from "../src/index.js";
+
+import { IStoreState, loginApp } from "./index.js";
+
+export type IImplementation = BaseImplementation<IStoreState, OT>;
+
+export const implementations: IImplementation = {
+  suites: {
+    Default: "Testing the Redux store",
+  },
+  givens: {
+    AnEmptyState: loginApp.getInitialState(),
+    AStateWithEmail: { ...loginApp.getInitialState(), email: "bob@mail.com" },
+  },
+  whens: {
+    TheLoginIsSubmitted: () => [loginApp.actions.signIn],
+    TheEmailIsSetTo: (email) => [loginApp.actions.setEmail, email],
+    ThePasswordIsSetTo: (password) => [loginApp.actions.setPassword, password],
+  },
+  thens: {
+    TheEmailIs: (email) => (storeState) => {
+      assert.equal(storeState.email, email);
+    },
+    TheEmailIsNot: (email) => (storeState) => {
+      assert.notEqual(storeState.email, email);
+    },
+    ThePasswordIs: (password) => (selection) =>
+      assert.equal(selection.password, password),
+    ThePasswordIsNot: (password) => (selection) =>
+      assert.notEqual(selection.password, password),
+  },
+  checks: {
+    AnEmptyState: loginApp.getInitialState(),
+  },
+};
+
+export const input = loginApp.reducer;
+
+export const AppSpecification: ITestSpecification<IReduxIn<IStoreState>, OT> = (
+  Suite,
+  Given,
+  When,
+  Then
+  // Check
+) => {
+  return [
+    Suite.Default(
+      "Testing the Redux store",
+
+      {
+        test0: Given.AnEmptyState(
+          ["Set the email, check the email"],
+          [When.TheEmailIsSetTo("adam@email.com")],
+          [Then.TheEmailIs("adam@email.com")]
+        ),
+        test1: Given.AStateWithEmail(
+          ["set the default email and then check"],
+          [],
+          [
+            Then.TheEmailIsNot("adam@email.com"),
+            Then.TheEmailIs("bob@mail.com"),
+          ],
+          "bob@mail.com"
+        ),
+        test2: Given.AnEmptyState(
+          ["Set the email, set it again, and then check"],
+          [When.TheEmailIsSetTo("hello"), When.TheEmailIsSetTo("aloha")],
+          [Then.TheEmailIs("aloha")]
+        ),
+        test3: Given.AnEmptyState(
+          ["the default email is nothing"],
+          [],
+          [Then.TheEmailIs("")]
+        ),
+        test4: Given.AnEmptyState(
+          ["Set the email, check the email"],
+          [When.TheEmailIsSetTo("hey there")],
+          [Then.TheEmailIs("hey there")]
+        ),
+      },
+      [
+        // Check.AnEmptyState(
+        //   "imperative style",
+        //   [`aloha`],
+        //   async ({ TheEmailIsSetTo }, { TheEmailIs }) => {
+        //     await TheEmailIsSetTo("foo");
+        //     await TheEmailIs("foo");
+        //     const reduxPayload = await TheEmailIsSetTo("foobar");
+        //     await TheEmailIs("foobar");
+        //     // assert.deepEqual(reduxPayload, {
+        //     //   type: "login app/setEmail",
+        //     //   payload: "foobar",
+        //     // });
+        //   }
+        // ),
+      ]
+    ),
+  ];
+};
