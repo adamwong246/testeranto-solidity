@@ -1,0 +1,26 @@
+{
+  "name": "testeranto-solidity",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:adamwong246/testeranto-solidity.git",
+  "author": "adam wong <adamwong246@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "types": "dist/",
+  "dependencies": {
+    "@truffle/compile-common": "^0.9.8",
+    "@truffle/compile-solidity": "^6.0.79",
+    "@truffle/config": "^1.3.61",
+    "testeranto": "latest",
+    "tsc": "^2.0.4",
+    "typescript": "^5.8.3"
+  },
+  "scripts": {
+    "t-build": "tsx node_modules/testeranto/dist/prebuild/build.mjs",
+    "t-run": "tsx node_modules/testeranto/dist/prebuild/run.mjs",
+    "t-init": "tsx node_modules/testeranto/dist/prebuild/init-docs.mjs"
+  },
+  "exports": {
+    "./src/*": "./src/*.ts"
+  }
+}
