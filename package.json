@@ -2,13 +2,16 @@
   "name": "testeranto-solidity",
   "version": "1.0.1",
   "main": "index.js",
-  "repository": "git@github.com:adamwong246/testeranto-solidity.git",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/adamwong246/testeranto-solidity.git"
+  },
   "author": "adam wong <adamwong246@gmail.com>",
   "license": "MIT",
   "type": "module",
   "types": "dist/",
   "dependencies": {
-    "testeranto": "0.126.0",
+    "testeranto": "latest",
     "tsc": "^2.0.4",
     "typescript": "^5.8.3"
   },
@@ -27,5 +30,13 @@
   },
   "exports": {
     "./src/*": "./src/*.ts"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/adamwong246/testeranto-solidity/issues"
+  },
+  "homepage": "https://github.com/adamwong246/testeranto-solidity#readme",
+  "directories": {
+    "test": "test"
+  },
+  "description": ""
 }
