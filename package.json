@@ -1,28 +1,25 @@
 {
   "name": "testeranto-solidity",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "repository": "git@github.com:adamwong246/testeranto-solidity.git",
   "author": "adam wong <adamwong246@gmail.com>",
   "license": "MIT",
   "type": "module",
   "types": "dist/",
-  
   "dependencies": {
     "testeranto": "0.126.0",
     "tsc": "^2.0.4",
     "typescript": "^5.8.3"
   },
-
   "devDependencies": {
-    "@openzeppelin/contracts": "^4.8.0",
     "@ethersproject/shims": "^5.7.0",
+    "@openzeppelin/contracts": "^4.8.0",
     "@truffle/compile-solidity": "6.0.56",
     "ganache": "^7.9.2",
     "web3": "^4.16.0",
     "web3-eth-contract": "^1.8.1"
   },
-  
   "scripts": {
     "t-build": "tsx node_modules/testeranto/dist/prebuild/build.mjs",
     "t-run": "tsx node_modules/testeranto/dist/prebuild/run.mjs",
