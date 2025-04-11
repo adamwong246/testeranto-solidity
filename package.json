@@ -29,7 +29,9 @@
     "t-init": "tsx node_modules/testeranto/dist/prebuild/init-docs.mjs"
   },
   "exports": {
-    "./src/*": "./src/*.ts"
+    "./src/*": "./src/*.ts",
+    "./test/*": "./test/*.ts",
+    "./testeranto.config.ts": "./testeranto.config.ts"
   },
   "bugs": {
     "url": "https://github.com/adamwong246/testeranto-solidity/issues"
