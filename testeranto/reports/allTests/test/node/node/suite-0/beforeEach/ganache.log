@@ -1,0 +1,42 @@
+eth_accountseth_getBlockByNumbereth_blockNumbereth_sendTransaction
+  Transaction: 0xc1d2a012e1ffdbdf5120e425d8eb3a41dcd7368794da83f627e13cda749d64db
+  Contract created: 0x6949def7c48cc2c0f85da734707adc2f5c3bf79b
+  Gas usage: 113445
+  Block number: 1
+  Block time: Thu Apr 10 2025 17:42:09 GMT-0700 (Pacific Daylight Time)
+eth_getTransactionReceipteth_blockNumbereth_getBlockByNumbereth_blockNumbereth_sendTransaction
+  Transaction: 0x397cfe1a6ef8c9ac6c7f59ebedac8119c25f7351525fe2e4e99d494bda302cad
+  Gas usage: 43403
+  Block number: 2
+  Block time: Thu Apr 10 2025 17:42:09 GMT-0700 (Pacific Daylight Time)
+eth_getTransactionReceipteth_blockNumbereth_getBlockByNumbereth_blockNumbereth_sendTransaction
+  Transaction: 0x0038a8a45b0d091ce4463a9203ee093c2845779cd5b0d1fbdb7cd97f8ba7d02d
+  Gas usage: 26303
+  Block number: 3
+  Block time: Thu Apr 10 2025 17:42:09 GMT-0700 (Pacific Daylight Time)
+eth_getTransactionReceipteth_blockNumbereth_getBlockByNumbereth_blockNumbereth_sendTransaction
+  Transaction: 0x9ade4d5f6d63f5b05a9f9b6c6276d83110f1162d46f6284c304e75f2cbafa58a
+  Gas usage: 26303
+  Block number: 4
+  Block time: Thu Apr 10 2025 17:42:09 GMT-0700 (Pacific Daylight Time)
+eth_getTransactionReceipteth_blockNumbereth_getBlockByNumbereth_blockNumbereth_sendTransaction
+  Transaction: 0x07b082a7ce233752a3dd401c3b82732eb2d824ca71f06ce4b0eceb55334091a1
+  Gas usage: 26303
+  Block number: 5
+  Block time: Thu Apr 10 2025 17:42:09 GMT-0700 (Pacific Daylight Time)
+eth_getTransactionReceipteth_blockNumbereth_getBlockByNumbereth_blockNumbereth_sendTransaction
+  Transaction: 0x045f4842cab1b064f5e83cf63130da31151cab54ed2ea86a40e8098d05c2356e
+  Gas usage: 26344
+  Block number: 6
+  Block time: Thu Apr 10 2025 17:42:09 GMT-0700 (Pacific Daylight Time)
+eth_getTransactionReceipteth_blockNumbereth_getBlockByNumbereth_blockNumbereth_sendTransaction
+  Transaction: 0x4d73f5560c8ed2d7c0fc8b07fea07a64ab7b1c44560aea84b09cbe8e817a332b
+  Gas usage: 26344
+  Block number: 7
+  Block time: Thu Apr 10 2025 17:42:09 GMT-0700 (Pacific Daylight Time)
+eth_getTransactionReceipteth_blockNumbereth_getBlockByNumbereth_blockNumbereth_sendTransaction
+  Transaction: 0x391bd9d29c052949e7aa2bfda6e2d089648a32bad92baac040226397c104a944
+  Gas usage: 26344
+  Block number: 8
+  Block time: Thu Apr 10 2025 17:42:09 GMT-0700 (Pacific Daylight Time)
+eth_getTransactionReceipteth_blockNumbereth_call

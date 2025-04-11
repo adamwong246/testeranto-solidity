@@ -1,18 +1,21 @@
 import Testeranto from "testeranto/src/Web";
-import { ITestSpecification, OT } from "testeranto/src/Types";
 
-import { AnyAction, Reducer } from "redux";
+import { ITestImplementation, ITestSpecification, OT } from "testeranto/src/Types";
 
-import { BaseImplementation, IReduxIn, ReduxTesterantoInterface } from ".";
+import { I, IInput } from ".";
+import { testInterfacer } from "./ganacheServerInterface";
 
-export default <IStoreShape, O extends OT>(
-  testInput: Reducer<IStoreShape, AnyAction>,
-  testSpecifications: ITestSpecification<IReduxIn<IStoreShape>, O>,
-  testImplementations: BaseImplementation<IStoreShape, O>
+export default <O extends OT>(
+  testInput: IInput,
+  testSpecifications: ITestSpecification<I, O>,
+  testImplementations:  ITestImplementation<
+  I,
+  O
+>
 ) =>
   Testeranto(
     testInput,
     testSpecifications,
     testImplementations,
-    ReduxTesterantoInterface()
+    testInterfacer(testInput)
   );

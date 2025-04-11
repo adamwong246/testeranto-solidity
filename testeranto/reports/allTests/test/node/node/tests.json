@@ -1,0 +1,130 @@
+{
+  "name": "Testing a very simple smart contract ephemerally",
+  "givens": [
+    {
+      "key": "test0",
+      "name": "Default",
+      "whens": [],
+      "thens": [
+        {
+          "name": "Get: [object Object]",
+          "error": false
+        }
+      ],
+      "error": null,
+      "features": "my first contract"
+    },
+    {
+      "key": "test1",
+      "name": "Default",
+      "whens": [
+        {
+          "name": "Increment: 1"
+        },
+        {
+          "name": "Increment: 1"
+        }
+      ],
+      "thens": [
+        {
+          "name": "Get: [object Object]",
+          "error": false
+        }
+      ],
+      "error": null,
+      "features": [
+        "hello"
+      ]
+    },
+    {
+      "key": "test2",
+      "name": "Default",
+      "whens": [
+        {
+          "name": "Increment: 1"
+        },
+        {
+          "name": "Increment: 1"
+        },
+        {
+          "name": "Increment: 1"
+        },
+        {
+          "name": "Increment: 1"
+        }
+      ],
+      "thens": [
+        {
+          "name": "Get: [object Object]",
+          "error": false
+        }
+      ],
+      "error": null,
+      "features": [
+        "hello"
+      ]
+    },
+    {
+      "key": "test3",
+      "name": "Default",
+      "whens": [
+        {
+          "name": "Increment: 1"
+        },
+        {
+          "name": "Increment: 1"
+        },
+        {
+          "name": "Increment: 1"
+        },
+        {
+          "name": "Increment: 1"
+        },
+        {
+          "name": "Decrement: 1"
+        },
+        {
+          "name": "Decrement: 1"
+        },
+        {
+          "name": "Decrement: 1"
+        }
+      ],
+      "thens": [
+        {
+          "name": "Get: [object Object]",
+          "error": {
+            "message": "expected 11 to equal 1",
+            "actual": 11,
+            "expected": 1,
+            "showDiff": true,
+            "operator": "strictEqual",
+            "name": "AssertionError",
+            "ok": false,
+            "stack": "AssertionError: expected 11 to equal 1\n    at Then.thenCB (file:///Users/adam/Code/testeranto-solidity/testeranto/bundles/node/allTests/test/node.mjs:46778:22)\n    at async file:///Users/adam/Code/testeranto-solidity/testeranto/bundles/node/allTests/test/node.mjs:8143:16\n    at async Then.butThen (file:///Users/adam/Code/testeranto-solidity/testeranto/bundles/node/allTests/test/node.mjs:8474:18)\n    at async Given.give (file:///Users/adam/Code/testeranto-solidity/testeranto/bundles/node/allTests/test/node.mjs:8073:19)\n    at async Testeranto.constructor.run (file:///Users/adam/Code/testeranto-solidity/testeranto/bundles/node/allTests/test/node.mjs:7972:22)\n    at async file:///Users/adam/Code/testeranto-solidity/testeranto/bundles/node/allTests/test/node.mjs:8215:19\n    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/testeranto-solidity/testeranto/bundles/node/allTests/test/node.mjs:8246:29)\n    at async NodeTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/testeranto-solidity/testeranto/bundles/node/allTests/test/node.mjs:8718:12)\n    at async testeranto (file:///Users/adam/Code/testeranto-solidity/testeranto/bundles/node/allTests/test/node.mjs:8734:15)"
+          }
+        }
+      ],
+      "error": null,
+      "failed": true,
+      "features": [
+        "hello"
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "key": "AnEmptyState",
+      "name": "AnEmptyState",
+      "features": [
+        "You can write your tests imperatively"
+      ]
+    }
+  ],
+  "fails": 1,
+  "failed": true,
+  "features": [
+    "my first contract",
+    "hello"
+  ]
+}

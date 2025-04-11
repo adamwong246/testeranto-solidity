@@ -1,0 +1,129 @@
+/Users/adam/Code/testeranto-solidity/src/ganacheServerInterface.ts (52,36): Type 'number' is not assignable to type 'string'.
+/Users/adam/Code/testeranto-solidity/src/index.ts (21,17): Cannot find name 'Ibdd_in'.
+/Users/adam/Code/testeranto-solidity/src/node.ts (1,24): File '/Users/adam/Code/testeranto/src/Node.ts' is not under 'rootDir' '/Users/adam/Code/testeranto-solidity/src'. 'rootDir' is expected to contain all source files.
+  The file is in the program because:
+    Root file specified for compilation
+    Imported via "testeranto/src/Node" from file '/Users/adam/Code/testeranto-solidity/src/node.ts' with packageId 'testeranto/src/Node.ts@0.126.0'
+/Users/adam/Code/testeranto-solidity/src/node.ts (20,20): Argument of type 'import("/Users/adam/Code/testeranto-solidity/src/index").IInput' is not assignable to parameter of type 'import("/Users/adam/Code/testeranto-solidity/src/ganacheServerInterface").IInput'.
+  Source has 2 element(s) but target allows only 1.
+/Users/adam/Code/testeranto-solidity/test/implementation.ts (10,19): File '/Users/adam/Code/testeranto-solidity/test/specification.ts' is not under 'rootDir' '/Users/adam/Code/testeranto-solidity/src'. 'rootDir' is expected to contain all source files.
+  The file is in the program because:
+    Imported via "./specification" from file '/Users/adam/Code/testeranto-solidity/test/implementation.ts'
+    Root file specified for compilation
+    Imported via "./specification" from file '/Users/adam/Code/testeranto-solidity/test/node.ts'
+/Users/adam/Code/testeranto-solidity/test/node.ts (3,33): File '/Users/adam/Code/testeranto-solidity/test/implementation.ts' is not under 'rootDir' '/Users/adam/Code/testeranto-solidity/src'. 'rootDir' is expected to contain all source files.
+  The file is in the program because:
+    Root file specified for compilation
+    Imported via "./implementation" from file '/Users/adam/Code/testeranto-solidity/test/node.ts'
+/Users/adam/Code/testeranto-solidity/test/node.ts (4,23): File '/Users/adam/Code/testeranto-solidity/test/input.ts' is not under 'rootDir' '/Users/adam/Code/testeranto-solidity/src'. 'rootDir' is expected to contain all source files.
+  The file is in the program because:
+    Root file specified for compilation
+    Imported via "./input" from file '/Users/adam/Code/testeranto-solidity/test/node.ts'
+/Users/adam/Code/testeranto-solidity/test/node.ts (9,3): Argument of type '{ contractName: string; abi: any; }' is not assignable to parameter of type 'IInput'.
+/Users/adam/Code/testeranto-solidity/test/specification.ts (56,13): Type 'I' does not satisfy the constraint 'IT'.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (4,21): File '/Users/adam/Code/testeranto/src/lib/types.ts' is not under 'rootDir' '/Users/adam/Code/testeranto-solidity/src'. 'rootDir' is expected to contain all source files.
+  The file is in the program because:
+    Imported via "./types.js" from file '/Users/adam/Code/testeranto/src/lib/abstractBase.ts'
+    Imported via "./types" from file '/Users/adam/Code/testeranto/src/lib/pmProxy.ts'
+    Imported via "./lib/types.js" from file '/Users/adam/Code/testeranto/src/Types.ts'
+    Imported via "./types.js" from file '/Users/adam/Code/testeranto/src/lib/index.ts'
+    Imported via "./types.js" from file '/Users/adam/Code/testeranto/src/lib/basebuilder.ts'
+    Imported via "./types.js" from file '/Users/adam/Code/testeranto/src/lib/classBuilder.ts'
+    Imported via "./types" from file '/Users/adam/Code/testeranto/src/lib/core.ts'
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (12,8): File '/Users/adam/Code/testeranto/src/lib/pmProxy.ts' is not under 'rootDir' '/Users/adam/Code/testeranto-solidity/src'. 'rootDir' is expected to contain all source files.
+  The file is in the program because:
+    Imported via "./pmProxy.js" from file '/Users/adam/Code/testeranto/src/lib/abstractBase.ts'
+    Root file specified for compilation
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (20,3): Property 'store' has no initializer and is not definitely assigned in the constructor.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (21,3): Property 'testResourceConfiguration' has no initializer and is not definitely assigned in the constructor.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (23,3): Property 'failed' has no initializer and is not definitely assigned in the constructor.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (174,3): Property 'error' has no initializer and is not definitely assigned in the constructor.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (176,3): Property 'store' has no initializer and is not definitely assigned in the constructor.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (177,3): Property 'recommendedFsPath' has no initializer and is not definitely assigned in the constructor.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (180,3): Property 'key' has no initializer and is not definitely assigned in the constructor.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (181,3): Property 'failed' has no initializer and is not definitely assigned in the constructor.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (270,7): Type 'unknown' is not assignable to type 'Error'.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (303,12): 'e' is of type 'unknown'.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (316,9): Type 'unknown' is not assignable to type 'boolean'.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (329,3): Property 'error' has no initializer and is not definitely assigned in the constructor.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (427,3): Property 'key' has no initializer and is not definitely assigned in the constructor.
+/Users/adam/Code/testeranto/src/lib/abstractBase.ts (432,3): Property 'store' has no initializer and is not definitely assigned in the constructor.
+/Users/adam/Code/testeranto/src/lib/basebuilder.ts (33,3): Property 'assertThis' has no initializer and is not definitely assigned in the constructor.
+/Users/adam/Code/testeranto/src/lib/basebuilder.ts (44,3): Property 'puppetMaster' has no initializer and is not definitely assigned in the constructor.
+/Users/adam/Code/testeranto/src/lib/basebuilder.ts (80,13): Argument of type '(fPath: string, value: string | Buffer | PassThrough) => void' is not assignable to parameter of type '(fPath: string, value: unknown) => void'.
+  Types of parameters 'value' and 'value' are incompatible.
+    Type 'unknown' is not assignable to type 'string | Buffer<ArrayBufferLike> | PassThrough'.
+/Users/adam/Code/testeranto/src/lib/basebuilder.ts (166,29): Property 'artifacts' does not exist on type '{ test: BaseSuite<I, O>; toObj: () => { name: string; givens: { key: string; name: string; whens: { name: string; error: boolean; }[]; thens: { name: string; error: boolean; }[]; error: (string | Error | undefined)[] | null; failed: boolean; features: string[]; }[]; checks: any[]; fails: number; failed: boolean; fea...'.
+/Users/adam/Code/testeranto/src/lib/classBuilder.ts (3,29): File '/Users/adam/Code/testeranto/src/lib/basebuilder.ts' is not under 'rootDir' '/Users/adam/Code/testeranto-solidity/src'. 'rootDir' is expected to contain all source files.
+  The file is in the program because:
+    Root file specified for compilation
+    Imported via "./basebuilder.js" from file '/Users/adam/Code/testeranto/src/lib/classBuilder.ts'
+/Users/adam/Code/testeranto/src/lib/core.ts (23,30): File '/Users/adam/Code/testeranto/src/lib/classBuilder.ts' is not under 'rootDir' '/Users/adam/Code/testeranto-solidity/src'. 'rootDir' is expected to contain all source files.
+  The file is in the program because:
+    Root file specified for compilation
+    Imported via "./classBuilder.js" from file '/Users/adam/Code/testeranto/src/lib/core.ts'
+/Users/adam/Code/testeranto/src/lib/index.ts (1,25): File '/Users/adam/Code/testeranto/src/PM/pure.ts' is not under 'rootDir' '/Users/adam/Code/testeranto-solidity/src'. 'rootDir' is expected to contain all source files.
+  The file is in the program because:
+    Imported via "../PM/pure.js" from file '/Users/adam/Code/testeranto/src/lib/index.ts'
+    Imported via "../PM/pure" from file '/Users/adam/Code/testeranto/src/lib/types.ts'
+/Users/adam/Code/testeranto/src/lib/index.ts (3,25): File '/Users/adam/Code/testeranto/src/PM/node.ts' is not under 'rootDir' '/Users/adam/Code/testeranto-solidity/src'. 'rootDir' is expected to contain all source files.
+  The file is in the program because:
+    Imported via "../PM/node.js" from file '/Users/adam/Code/testeranto/src/lib/index.ts'
+    Imported via "../PM/node" from file '/Users/adam/Code/testeranto/src/lib/types.ts'
+    Root file specified for compilation
+    Imported via "./PM/node.js" from file '/Users/adam/Code/testeranto/src/Node.ts'
+/Users/adam/Code/testeranto/src/lib/index.ts (4,24): File '/Users/adam/Code/testeranto/src/PM/web.ts' is not under 'rootDir' '/Users/adam/Code/testeranto-solidity/src'. 'rootDir' is expected to contain all source files.
+  The file is in the program because:
+    Imported via "../PM/web.js" from file '/Users/adam/Code/testeranto/src/lib/index.ts'
+    Imported via "../PM/web" from file '/Users/adam/Code/testeranto/src/lib/types.ts'
+/Users/adam/Code/testeranto/src/lib/index.ts (14,8): File '/Users/adam/Code/testeranto/src/Types.ts' is not under 'rootDir' '/Users/adam/Code/testeranto-solidity/src'. 'rootDir' is expected to contain all source files.
+  The file is in the program because:
+    Imported via "../Types.js" from file '/Users/adam/Code/testeranto/src/lib/index.ts'
+    Imported via "../Types.js" from file '/Users/adam/Code/testeranto/src/lib/abstractBase.ts'
+    Imported via "../Types" from file '/Users/adam/Code/testeranto/src/lib/types.ts'
+    Imported via "../Types.js" from file '/Users/adam/Code/testeranto/src/lib/basebuilder.ts'
+    Imported via "../Types.js" from file '/Users/adam/Code/testeranto/src/lib/classBuilder.ts'
+    Imported via "../Types.js" from file '/Users/adam/Code/testeranto/src/lib/core.ts'
+    Imported via "./Types.js" from file '/Users/adam/Code/testeranto/src/Node.ts'
+    Imported via "testeranto/src/Types" from file '/Users/adam/Code/testeranto-solidity/src/ganacheServerInterface.ts' with packageId 'testeranto/src/Types.ts@0.126.0'
+    Imported via "testeranto/src/Types" from file '/Users/adam/Code/testeranto-solidity/src/node.ts' with packageId 'testeranto/src/Types.ts@0.126.0'
+    Imported via "testeranto/src/Types" from file '/Users/adam/Code/testeranto-solidity/test/implementation.ts' with packageId 'testeranto/src/Types.ts@0.126.0'
+    Imported via "testeranto/src/Types" from file '/Users/adam/Code/testeranto-solidity/test/specification.ts' with packageId 'testeranto/src/Types.ts@0.126.0'
+/Users/adam/Code/testeranto/src/lib/index.ts (32,3): Type '(store: IT["istore"], thenCb: (s: IT["iselection"]) => Promise<IT["isubject"]>) => Promise<unknown>' is not assignable to type '(store: unknown, thenCB: unknown, testResource: ITTestResourceConfiguration, pm: IPM) => Promise<unknown>'.
+  Types of parameters 'thenCb' and 'thenCB' are incompatible.
+    Type 'unknown' is not assignable to type '(s: unknown) => Promise<unknown>'.
+/Users/adam/Code/testeranto/src/Node.ts (1,24): File '/Users/adam/Code/testeranto/src/lib/core.ts' is not under 'rootDir' '/Users/adam/Code/testeranto-solidity/src'. 'rootDir' is expected to contain all source files.
+  The file is in the program because:
+    Root file specified for compilation
+    Imported via "./lib/core.js" from file '/Users/adam/Code/testeranto/src/Node.ts'
+/Users/adam/Code/testeranto/src/PM/index.ts (8,3): Property 'testResourceConfiguration' has no initializer and is not definitely assigned in the constructor.
+/Users/adam/Code/testeranto/src/PM/node.ts (16,3): Property 'client' has no initializer and is not definitely assigned in the constructor.
+/Users/adam/Code/testeranto/src/PM/pure.ts (7,52): File '/Users/adam/Code/testeranto/src/lib/index.ts' is not under 'rootDir' '/Users/adam/Code/testeranto-solidity/src'. 'rootDir' is expected to contain all source files.
+  The file is in the program because:
+    Root file specified for compilation
+    Imported via "../lib" from file '/Users/adam/Code/testeranto/src/PM/pure.ts'
+    Imported via "../lib" from file '/Users/adam/Code/testeranto/src/PM/index.ts'
+    Imported via "../lib" from file '/Users/adam/Code/testeranto/src/PM/node.ts'
+    Imported via "../lib" from file '/Users/adam/Code/testeranto/src/PM/web.ts'
+    Imported via "./lib/index.js" from file '/Users/adam/Code/testeranto/src/Types.ts'
+    Imported via "." from file '/Users/adam/Code/testeranto/src/lib/abstractBase.ts'
+    Imported via "." from file '/Users/adam/Code/testeranto/src/lib/basebuilder.ts'
+    Imported via "./index.js" from file '/Users/adam/Code/testeranto/src/lib/classBuilder.ts'
+    Imported via "./index.js" from file '/Users/adam/Code/testeranto/src/lib/core.ts'
+    Imported via "./lib/index.js" from file '/Users/adam/Code/testeranto/src/Node.ts'
+/Users/adam/Code/testeranto/src/PM/pure.ts (9,20): File '/Users/adam/Code/testeranto/src/PM/index.ts' is not under 'rootDir' '/Users/adam/Code/testeranto-solidity/src'. 'rootDir' is expected to contain all source files.
+  The file is in the program because:
+    Imported via "." from file '/Users/adam/Code/testeranto/src/PM/pure.ts'
+    Imported via "." from file '/Users/adam/Code/testeranto/src/PM/node.ts'
+    Imported via "./PM/index.js" from file '/Users/adam/Code/testeranto/src/Types.ts'
+    Root file specified for compilation
+/Users/adam/Code/testeranto/src/Types.ts (11,8): File '/Users/adam/Code/testeranto/src/lib/abstractBase.ts' is not under 'rootDir' '/Users/adam/Code/testeranto-solidity/src'. 'rootDir' is expected to contain all source files.
+  The file is in the program because:
+    Imported via "./lib/abstractBase.js" from file '/Users/adam/Code/testeranto/src/Types.ts'
+    Imported via "./abstractBase" from file '/Users/adam/Code/testeranto/src/lib/types.ts'
+    Imported via "./abstractBase.js" from file '/Users/adam/Code/testeranto/src/lib/index.ts'
+    Root file specified for compilation
+    Imported via "./abstractBase.js" from file '/Users/adam/Code/testeranto/src/lib/basebuilder.ts'
+    Imported via "./abstractBase.js" from file '/Users/adam/Code/testeranto/src/lib/classBuilder.ts'
+    Imported via "./abstractBase.js" from file '/Users/adam/Code/testeranto/src/lib/core.ts'
+    Imported via "testeranto/src/lib/abstractBase" from file '/Users/adam/Code/testeranto-solidity/test/specification.ts' with packageId 'testeranto/src/lib/abstractBase.ts@0.126.0'

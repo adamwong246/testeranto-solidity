@@ -1,93 +1,91 @@
+/// <reference types="../index.d.ts" />
 
-import { Ibdd_in, IPartialInterface, OT } from "testeranto/src/Types";
-import { ITestImplementation } from "testeranto/src/Types";
+// import Testeranto from "testeranto/src/Node";
+// import {
+//   Ibdd_in,
+//   Ibdd_out,
+//   IPartialInterface,
+//   ITestImplementation,
+//   ITestSpecification,
+//   OT,
+// } from "testeranto/src/Types";
 
-import {
-  ActionCreatorWithNonInferrablePayload,
-  ActionCreatorWithoutPayload,
-  ActionCreatorWithPayload,
-  Reducer,
-  Store,
-} from "@reduxjs/toolkit";
-import { createStore, AnyAction, StoreEnhancerStoreCreator } from "redux";
-import { IPM } from "testeranto/src/lib/types";
+// import Ganache, { ServerOptions } from "ganache";
+// import Web3 from "web3";
 
-export type WhenShape = [
-  (
-    | ActionCreatorWithNonInferrablePayload<string>
-    | ActionCreatorWithoutPayload<string>
-  ),
-  object
+export type IInput = [
+  { contractName: string; abi: any | any[] },
+  (web3: any) => Promise<never[]>
 ];
 
-export type IINput<IStoreState> = Reducer<IStoreState, AnyAction>;
-
-export type IReduxIn<IStoreState> = Ibdd_in<
-  IINput<IStoreState>,
-  Reducer<IStoreState, AnyAction>,
-  Store<IStoreState, AnyAction>,
-  IStoreState,
-  StoreEnhancerStoreCreator<object, object>,
-  WhenShape,
-  (x: IStoreState, pm: IPM) => IStoreState
+export type I = Ibdd_in<
+  unknown,
+  unknown,
+  {
+    contract: any;
+    accounts: any;
+  },
+  { contract: any; accounts: any },
+  unknown,
+  unknown,
+  unknown
 >;
 
-export type BaseImplementation<
-  IStoreShape,
-  bddout extends OT
-> = ITestImplementation<
-  IReduxIn<IStoreShape>,
-  bddout,
-  {
-    givens: {
-      [K in keyof bddout["givens"]]: IStoreShape;
-    };
+// export default <
+//   O extends OT
+// >(
+//   testImplementations: ITestImplementation<I, O>,
+//   testSpecifications: ITestSpecification<I, O>,
+//   testInput: IInput
+// ) => {
+//   const compilation = testInput[0];
 
-    whens: {
-      [K in keyof bddout["whens"]]: (
-        ...x
-      ) =>
-        | [string, string?]
-        | [ActionCreatorWithoutPayload]
-        | [ActionCreatorWithPayload<any>, string];
-    };
+//   const testInterface: IPartialInterface<any> = {
+//     beforeAll: async () => testInput[0],
 
-    checks: {
-      [K in keyof bddout["checks"]]: IStoreShape;
-    };
+//     beforeEach: async (contract, it, tr, iv, util) => {
+//       const logHandle = util.createWriteStream("ganache.log");
 
-    thens: {
-      [K in keyof bddout["thens"]]: (
-        ...It: bddout["thens"][K]
-      ) => (ssel: IReduxIn<IStoreShape>["iselection"], utils: IPM) => void;
-    };
-  }
->;
+//       const options: ServerOptions<any> = {
+//         logging: {
+//           logger: {
+//             log: (message: string) => {
+//               util.write(logHandle, message);
+//             },
+//           },
+//         },
+//       } as any;
 
-export const ReduxTesterantoInterface = <
-  IStoreShape
-  // iAppOut extends Ibdd_out<any, any, any, any, any>
->() =>
-  // testInput: Reducer<IStoreShape, AnyAction>,
-  // testSpecifications: ITestSpecification<any>,
-  // testImplementations: BaseImplementation<IStoreShape, iAppOut>
-  {
-    const testInterface: IPartialInterface<IReduxIn<IStoreShape>> = {
-      beforeEach: async function (subject, initializer) {
-        return createStore<IStoreShape, AnyAction, object, object>(
-          subject,
-          initializer
-        );
-      },
-      andWhen: async function (store, whenCB) {
-        const [action, payload] = whenCB;
-        store.dispatch(payload ? action(payload) : action());
-        return store;
-      },
-      butThen: async function (store, actioner, t, p) {
-        return actioner(store.getState(), p);
-      },
-    };
+//       // https://github.com/trufflesuite/ganache#programmatic-use
+//       const provider = Ganache.provider(options);
 
-    return testInterface;
-  };
+//       /* @ts-ignore:next-line */
+//       const web3 = new Web3(provider);
+//       const accounts = await web3.eth.getAccounts();
+//       const argz = await testInput[1](web3);
+
+//       const size =
+//         Buffer.byteLength(contract.deployedBytecode.bytes, "utf8") / 2;
+
+//       return {
+//         contract: await new web3.eth.Contract(contract.abi)
+//           .deploy({
+//             data: contract.bytecode.bytes,
+//             arguments: argz,
+//           })
+//           .send({ from: accounts[0], gas: 7000000 }),
+//         accounts,
+//         provider,
+//       };
+//     },
+//     andWhen: async ({ provider, contract, accounts }, callback: any) =>
+//       callback({ contract, accounts }),
+//   };
+
+//   return Testeranto<I, O>(
+//     testInput,
+//     testSpecifications,
+//     testImplementations,
+//     testInterface
+//   );
+// };

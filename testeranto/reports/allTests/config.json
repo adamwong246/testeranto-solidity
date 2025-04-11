@@ -1,0 +1,27 @@
+{
+  "tests": [
+    [
+      "./test/node.ts",
+      "node",
+      {
+        "ports": 0
+      },
+      []
+    ]
+  ],
+  "clearScreen": false,
+  "debugger": false,
+  "externals": [
+    "ganache",
+    "stream"
+  ],
+  "webPlugins": [],
+  "nodePlugins": [
+    null
+  ],
+  "importPlugins": [],
+  "minify": false,
+  "ports": [],
+  "src": "src",
+  "buildDir": "/Users/adam/Code/testeranto-solidity/testeranto/bundles/allTests"
+}

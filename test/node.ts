@@ -1,13 +1,12 @@
-import { OT } from "testeranto/src/Types";
-
 import Testeranto from "../src/node";
 
-import { IStoreState } from ".";
+import { implementations } from "./implementation";
+import { input } from "./input";
+import { O, specifications } from "./specification";
 
-import { input, AppSpecification, implementations } from "./test";
 
-export default Testeranto<IStoreState, OT>(
+export default Testeranto<O>(
   input,
-  AppSpecification,
+  specifications,
   implementations
 );

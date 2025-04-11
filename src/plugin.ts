@@ -64,18 +64,16 @@ const solidifier = async (path, recursivePayload = {}) => {
 export const solCompile = async (
   entrySolidityFile
 ): Promise<{ remmapedSources: any; result: WorkflowCompileResult }> => {
-  const sources = await solidifier(`src/contracts/${entrySolidityFile}.sol`);
-
+  const sources = await solidifier(entrySolidityFile);
   const remmapedSources = {};
   for (const filepath of Object.keys(sources)) {
-    const x = filepath.split("src/contracts/");
+    const x = filepath;
     if (x.length === 1) {
       remmapedSources[filepath.split("node_modules/")[1]] = sources[filepath];
     } else {
       remmapedSources[filepath] = sources[filepath];
     }
   }
-
   /* @ts-ignore:next-line */
   const tConfig = new TruffleConfig();
 
@@ -93,14 +91,14 @@ export const solCompile = async (
   };
 };
 
-export const solidityEsBuildConfig: IPluginFactory = (register?): Plugin => {
+export const solidityEsBuildConfig: IPluginFactory = (register?, es?): Plugin => {
   return {
     name: "solidity",
     setup(build) {
       build.onResolve({ filter: /^.*\.sol$/ }, (args) => {
-        const path = args.path.split("/").slice(-1)[0].split(".")[0];
+
         return {
-          path,
+          path: args.resolveDir + "/" + args.path,
           namespace: "solidity",
           pluginData: {
             importer: `solidity:${path}`,
