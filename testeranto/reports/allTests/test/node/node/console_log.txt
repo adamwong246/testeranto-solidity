@@ -5,19 +5,4 @@ stdout data [
   '{"scheduled":true,"name":"./test/node.ts","ports":[],"fs":"testeranto/reports/allTests/./test/node/node","browserWSEndpoint":"ws://127.0.0.1:3234/devtools/browser/14f1f866-3722-402f-b8a8-4e8cbb714410"}',
   '--trace-warnings'
 ]
-stdout data test failed 3 AssertionError: expected 11 to equal 1
-    at Then.thenCB (file:///Users/adam/Code/testeranto-solidity/testeranto/bundles/node/allTests/test/node.mjs:46778:22)
-    at async file:///Users/adam/Code/testeranto-solidity/testeranto/bundles/node/allTests/test/node.mjs:8143:16
-    at async Then.butThen (file:///Users/adam/Code/testeranto-solidity/testeranto/bundles/node/allTests/test/node.mjs:8474:18)
-    at async Given.give (file:///Users/adam/Code/testeranto-solidity/testeranto/bundles/node/allTests/test/node.mjs:8073:19)
-    at async Testeranto.constructor.run (file:///Users/adam/Code/testeranto-solidity/testeranto/bundles/node/allTests/test/node.mjs:7972:22)
-    at async file:///Users/adam/Code/testeranto-solidity/testeranto/bundles/node/allTests/test/node.mjs:8215:19
-    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/testeranto-solidity/testeranto/bundles/node/allTests/test/node.mjs:8246:29)
-    at async NodeTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/testeranto-solidity/testeranto/bundles/node/allTests/test/node.mjs:8718:12)
-    at async testeranto (file:///Users/adam/Code/testeranto-solidity/testeranto/bundles/node/allTests/test/node.mjs:8734:15) {
-  actual: 11,
-  expected: 1,
-  showDiff: true,
-  operator: 'strictEqual'
-}
-stderr data goodbye node error 1
+stderr data goodbye node error 0

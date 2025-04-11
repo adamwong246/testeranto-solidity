@@ -3,7 +3,7 @@
 /Users/adam/Code/testeranto-solidity/src/node.ts (1,24): File '/Users/adam/Code/testeranto/src/Node.ts' is not under 'rootDir' '/Users/adam/Code/testeranto-solidity/src'. 'rootDir' is expected to contain all source files.
   The file is in the program because:
     Root file specified for compilation
-    Imported via "testeranto/src/Node" from file '/Users/adam/Code/testeranto-solidity/src/node.ts' with packageId 'testeranto/src/Node.ts@0.126.0'
+    Imported via "testeranto/src/Node" from file '/Users/adam/Code/testeranto-solidity/src/node.ts' with packageId 'testeranto/src/Node.ts@0.127.0'
 /Users/adam/Code/testeranto-solidity/src/node.ts (20,20): Argument of type 'import("/Users/adam/Code/testeranto-solidity/src/index").IInput' is not assignable to parameter of type 'import("/Users/adam/Code/testeranto-solidity/src/ganacheServerInterface").IInput'.
   Source has 2 element(s) but target allows only 1.
 /Users/adam/Code/testeranto-solidity/test/implementation.ts (10,19): File '/Users/adam/Code/testeranto-solidity/test/specification.ts' is not under 'rootDir' '/Users/adam/Code/testeranto-solidity/src'. 'rootDir' is expected to contain all source files.
@@ -85,10 +85,10 @@
     Imported via "../Types.js" from file '/Users/adam/Code/testeranto/src/lib/classBuilder.ts'
     Imported via "../Types.js" from file '/Users/adam/Code/testeranto/src/lib/core.ts'
     Imported via "./Types.js" from file '/Users/adam/Code/testeranto/src/Node.ts'
-    Imported via "testeranto/src/Types" from file '/Users/adam/Code/testeranto-solidity/src/ganacheServerInterface.ts' with packageId 'testeranto/src/Types.ts@0.126.0'
-    Imported via "testeranto/src/Types" from file '/Users/adam/Code/testeranto-solidity/src/node.ts' with packageId 'testeranto/src/Types.ts@0.126.0'
-    Imported via "testeranto/src/Types" from file '/Users/adam/Code/testeranto-solidity/test/implementation.ts' with packageId 'testeranto/src/Types.ts@0.126.0'
-    Imported via "testeranto/src/Types" from file '/Users/adam/Code/testeranto-solidity/test/specification.ts' with packageId 'testeranto/src/Types.ts@0.126.0'
+    Imported via "testeranto/src/Types" from file '/Users/adam/Code/testeranto-solidity/src/ganacheServerInterface.ts' with packageId 'testeranto/src/Types.ts@0.127.0'
+    Imported via "testeranto/src/Types" from file '/Users/adam/Code/testeranto-solidity/src/node.ts' with packageId 'testeranto/src/Types.ts@0.127.0'
+    Imported via "testeranto/src/Types" from file '/Users/adam/Code/testeranto-solidity/test/implementation.ts' with packageId 'testeranto/src/Types.ts@0.127.0'
+    Imported via "testeranto/src/Types" from file '/Users/adam/Code/testeranto-solidity/test/specification.ts' with packageId 'testeranto/src/Types.ts@0.127.0'
 /Users/adam/Code/testeranto/src/lib/index.ts (32,3): Type '(store: IT["istore"], thenCb: (s: IT["iselection"]) => Promise<IT["isubject"]>) => Promise<unknown>' is not assignable to type '(store: unknown, thenCB: unknown, testResource: ITTestResourceConfiguration, pm: IPM) => Promise<unknown>'.
   Types of parameters 'thenCb' and 'thenCB' are incompatible.
     Type 'unknown' is not assignable to type '(s: unknown) => Promise<unknown>'.
@@ -126,4 +126,4 @@
     Imported via "./abstractBase.js" from file '/Users/adam/Code/testeranto/src/lib/basebuilder.ts'
     Imported via "./abstractBase.js" from file '/Users/adam/Code/testeranto/src/lib/classBuilder.ts'
     Imported via "./abstractBase.js" from file '/Users/adam/Code/testeranto/src/lib/core.ts'
-    Imported via "testeranto/src/lib/abstractBase" from file '/Users/adam/Code/testeranto-solidity/test/specification.ts' with packageId 'testeranto/src/lib/abstractBase.ts@0.126.0'
+    Imported via "testeranto/src/lib/abstractBase" from file '/Users/adam/Code/testeranto-solidity/test/specification.ts' with packageId 'testeranto/src/lib/abstractBase.ts@0.127.0'

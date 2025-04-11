@@ -93,7 +93,7 @@ export const commonGivens = <
         When.Decrement(1),
         When.Decrement(1),
       ],
-      [Then.Get({ asTestUser: 1, expectation: 11 })],
+      [Then.Get({ asTestUser: 1, expectation: 1 })],
       "my first contract"
     ),
   };

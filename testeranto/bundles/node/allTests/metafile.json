@@ -8952,7 +8952,7 @@
         "format": "esm"
       },
       "test/specification.ts": {
-        "bytes": 2172,
+        "bytes": 2171,
         "imports": [
           {
             "path": "testeranto/src/Types",
@@ -10301,13 +10301,13 @@
             "bytesInOutput": 101
           },
           "test/specification.ts": {
-            "bytesInOutput": 1660
+            "bytesInOutput": 1659
           },
           "test/node.ts": {
             "bytesInOutput": 82
           }
         },
-        "bytes": 1999249
+        "bytes": 1999248
       }
     }
   }

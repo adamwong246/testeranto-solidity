@@ -1,7 +1,7 @@
 eth_accountseth_getBlockByNumbereth_blockNumbereth_sendTransaction
-  Transaction: 0x4c6594b75860e4491c2f64705db6b1baed3c0b80cc9a1c9f7958688fe7b22440
-  Contract created: 0x97b8cbb2764b36fbac4826cb93199c0fbdc5f7de
+  Transaction: 0xc8f27ba7d4ffdb9fad864750b28530e02f46353146c9adf2492d87376236e9e0
+  Contract created: 0x1a0314cd6260afe21419d8a1a876b668cc71140c
   Gas usage: 113445
   Block number: 1
-  Block time: Thu Apr 10 2025 17:42:09 GMT-0700 (Pacific Daylight Time)
+  Block time: Thu Apr 10 2025 18:06:39 GMT-0700 (Pacific Daylight Time)
 eth_getTransactionReceipteth_blockNumber

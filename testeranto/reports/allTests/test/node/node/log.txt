@@ -33,15 +33,5 @@ Suite:,0,Testing a very simple smart contract ephemerally
  When:,Decrement: 1
  When:,Decrement: 1
  Then!!!:,Get: [object Object]
-AssertionError: expected 11 to equal 1
-    at Then.thenCB (file:///Users/adam/Code/testeranto-solidity/testeranto/bundles/node/allTests/test/node.mjs:46778:22)
-    at async file:///Users/adam/Code/testeranto-solidity/testeranto/bundles/node/allTests/test/node.mjs:8143:16
-    at async Then.butThen (file:///Users/adam/Code/testeranto-solidity/testeranto/bundles/node/allTests/test/node.mjs:8474:18)
-    at async Given.give (file:///Users/adam/Code/testeranto-solidity/testeranto/bundles/node/allTests/test/node.mjs:8073:19)
-    at async Testeranto.constructor.run (file:///Users/adam/Code/testeranto-solidity/testeranto/bundles/node/allTests/test/node.mjs:7972:22)
-    at async file:///Users/adam/Code/testeranto-solidity/testeranto/bundles/node/allTests/test/node.mjs:8215:19
-    at async Object.receiveTestResourceConfig (file:///Users/adam/Code/testeranto-solidity/testeranto/bundles/node/allTests/test/node.mjs:8246:29)
-    at async NodeTesteranto.receiveTestResourceConfig (file:///Users/adam/Code/testeranto-solidity/testeranto/bundles/node/allTests/test/node.mjs:8718:12)
-    at async testeranto (file:///Users/adam/Code/testeranto-solidity/testeranto/bundles/node/allTests/test/node.mjs:8734:15)
 
  Check: AnEmptyState
